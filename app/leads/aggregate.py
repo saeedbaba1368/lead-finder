@@ -42,6 +42,7 @@ from app.crawler.social import SocialLink
 from app.leads.errors import LeadDataError
 from app.leads.identity import domain_of, normalize_website
 from app.leads.model import BusinessLead
+from app.leads.contact_enrichment import enrich_contacts
 
 if TYPE_CHECKING:  # pragma: no cover
     from app.crawler.html_parser import ParsedPage
